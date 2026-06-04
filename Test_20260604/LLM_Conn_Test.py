@@ -8,7 +8,13 @@ dotenv.load_dotenv()
 # 0.x 兼容写法
 # llm = ChatOpenAI(base_url=os.getenv("SILICONFLOW_BASE_URL"),
 #                  api_key=os.getenv("SILICONFLOW_API_KEY"),
-#                  model="Pro/moonshotai/Kimi-K2.6")
+#                  model="Pro/moonshotai/Kimi-K2.6",
+# temperature = 0.7,  # 随机性，0=确定性，1=有创意（默认因模型而异）
+# max_tokens = 1000,  # 最大输出长度
+# timeout = 60,  # 超时时间（秒）
+# max_retries = 2,  # 失败重试次数
+#
+#                  )
 # llm = ChatDeepSeek(base_url=os.getenv("DEEPSEEK_BASE_URL"),
 #              api_key=os.getenv("DEEPSEEK_API_KEY"),
 #              model="deepseek-v4-flash"
